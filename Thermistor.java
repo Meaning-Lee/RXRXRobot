@@ -1,8 +1,8 @@
 //Mingfu
-//This program show how two functions to measure temp(Celcius) and wind speed.
-//The function for conductivity sensor should be similar.
-//you can try to write a function to filter data (like temp shoud be in 10~35 Degree range, values out of this range should be deleted), 
+//This program show how two functions to measure temp(Celcius) and wind speed.The function for conductivity sensor should be similar.
+//you can try to write a function to filter data (like temp shoud be about in 10~35 Degree range,windspeed about 0~5 m/s, values out of range should be deleted), 
 //and get mutiple values to get an average number.
+//Don't forget the function is made up by me. The goal of calibration is to get a function with accurate slope and intercept
 
 
 	import rxtxrobot.RXTXRobot;
@@ -43,7 +43,7 @@
 	    
 	
 	
-		//Calculate the C
+	    //Calculate the C
 	    double temp2 = (thermistorReading2 - 744.35)/(-6.9984);
 	    
 	    //Print the results
