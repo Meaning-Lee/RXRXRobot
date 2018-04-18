@@ -8,6 +8,7 @@
 		public static int getThermistorReading() {
 		    int sum = 0;
 		    int readingCount = 10;
+			int change = 1;
 		    //Read the analog pin values ten times, adding to sum each time
 		    for (int i = 0; i < readingCount; i++) {
 		       //Refresh the analog pins so we get new readings
